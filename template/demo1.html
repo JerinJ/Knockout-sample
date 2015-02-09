@@ -1,0 +1,38 @@
+<div class="container">
+	<div>
+		<div>
+			<div class="login-information">
+				<div>
+					<h1 data-bind="text: myPage"></h1>
+				</div>
+				<div>
+					<p>
+						<label data-bind="text: userNameLabel"></label>
+						<input type="text" name="username" data-bind="value: userNameValue" />
+					</p>
+					<p class="rig">
+						<label data-bind="text: emailLabel"></label>
+						<input type="email" name="emailid" class="form-control len" id="email" data-bind="value: emailValue" />
+					</p>
+					<p class="rig">
+						<label data-bind="text: passWordLabel"></label>
+						<input type="password" name="password" class="form-control len" id="passwo" data-bind="value: passwordValue" />
+					</p>
+					<p class="rig">
+						<label data-bind="text: confirmPasswordLabel"></label>
+						<input type="password" name="conpassword" class="form-control len" id="conpass" data-bind="value: confirmPasswordValue, enable: passwordEntered" />
+					</p>
+					<p class="lef">
+						<label data-bind="text: accessLevelLabel"></label>
+						<input type="radio" name="accessLevel" value="Admin" data-bind="checked: accessLevelValue" /> Admin
+						<input type="radio" name="accessLevel" value="User" data-bind="checked: accessLevelValue" /> User
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="saveb">
+			<button type="button">Cancel</button>
+			<button type="submit" data-bind="click: saveInfo, visible: showSave">Save</button>
+		</div>
+	</div>
+</div>
