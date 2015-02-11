@@ -1,7 +1,7 @@
 define(function (require) {
 	var $ = require('jquery'),
 		ko = require('knockout'),
-		html = require('text/text!../../knockout/template/demo1.html');
+		html = require('text/text!../template/demo1.html');
 
 	// Viewmodel here behaves as access variable for html and view
 	var viewModel = {};
